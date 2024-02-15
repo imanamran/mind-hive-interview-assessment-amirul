@@ -8,7 +8,7 @@ This assessment showcases an application combining web scraping, geospatial anal
 
 It involves constructing a full-stack solution with a Django-powered backend and a React.js frontend, focusing on the efficient gathering, storage, and visualization of geospatial data from Subway outlets in Kuala Lumpur.
 
-The project leverages technologies including MongoDB for data storage, turf.js and leaflet.js for geospatial analysis and mapping, and OpenAI's gpt-4-turbo-preview model to enhance search capabilities.
+The project leverages technologies including MongoDB for data storage and leaflet.js for geospatial analysis and mapping, and OpenAI's gpt-4-turbo-preview model to enhance search capabilities.
 
 ## Installation & Setup
 
@@ -96,7 +96,6 @@ The project leverages technologies including MongoDB for data storage, turf.js a
 - Create a React.js web application for visualizing outlets on a map.
 - Implement a 5KM radius catchment visualization for each outlet and highlight intersections.
 - Frameworks and Libraries
-    - **turf.js**: For advanced geospatial analysis.
     - **leaflet.js**: For interactive mapping.
     - **web-vitals**: For measuring web vitals.
 

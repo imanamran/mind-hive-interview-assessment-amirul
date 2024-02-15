@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import * as turf from '@turf/turf';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(false);
