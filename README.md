@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# DESCRIPTION
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# INSTALLATION & SETUP
 
-In the project directory, you can run:
+BACKEND: Django, MongoDB, OpenAI
+1. Create a python virtual environment (Optional)
+    - `python3 -m venv mindhive` 
+    - `source mindhive/bin/activate`
 
-### `npm start`
+2. Install libraries mindhive/requirements.txt
+    - `pip install -r requirements.txt`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3.  Start Django mindhive/api
+    - Export MongoDB and OpenAI KEY
+    - `python3 manage.py runserver`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+FRONTEND: React.js
+1. Install node module 
+    - Root directory
+    - `npm install` 
 
-### `npm test`
+2. Start frontend
+    - `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# METHODOLOGY
 
-### `npm run build`
+A. Scrapping
+1. view-source:https://subway.com.my/find-a-subway
+    
+2. Fields:
+    - Filter by “Kuala Lumpur” and get;
+    - Name
+    - Address
+    - Operating Hours
+    - Waze link
+    - Geocoding
+    
+3. Save as JSON
+    - In mindhive/scraper/scraper/spiders directory
+    - `scrapy runspider ietf.py -o output.json`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Store to MongoDB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+B. Build API using Django
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+C. Develop frontend using React.js
+- Framework
+-- turf.js
+-- leaflet.js
+-- web-vitals

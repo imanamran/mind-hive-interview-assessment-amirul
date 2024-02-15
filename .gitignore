@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/mindhive_venv
 /.pnp
 .pnp.js
 
