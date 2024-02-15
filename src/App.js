@@ -10,7 +10,7 @@ const App = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    fetch('http://47.129.1.120:8000/api/outlets/')
+    fetch('https://47.129.1.120:8000/api/outlets/')
       .then(response => response.json())
       .then(data => setOutlets(data));
   }, []);
@@ -19,7 +19,7 @@ const App = () => {
     setIsLoading(true); // Start loading
     setError(null); // Reset error state
 
-    fetch(`http://47.129.1.120:8000/api/outlets/search?query=${encodeURIComponent(searchQuery)}`)
+    fetch(`https://47.129.1.120:8000/api/outlets/search?query=${encodeURIComponent(searchQuery)}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch.');
