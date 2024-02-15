@@ -55,6 +55,7 @@ The project leverages technologies including MongoDB for data storage and leafle
 - **Target URL for Scraping**: `https://subway.com.my/find-a-subway`
 - view-source:https://subway.com.my/find-a-subway to better understand the structure
 - Example
+```html
 <div
     class="fp_listitem fp_list_marker2"
     data-latitude="3.128099"
@@ -84,6 +85,8 @@ The project leverages technologies including MongoDB for data storage and leafle
         </div>
     </div>
 </div>
+```
+
 
 - Scrape details such as name, address, operating hours, Waze link and geographical coordinates, in Kuala Lumpur ensuring pagination handling.
 - Store the data in MongoDB with an appropriate schema.
