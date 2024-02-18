@@ -40,6 +40,9 @@ const App = () => {
 
   return (
     <div style={{ height: '100vh', width: '100vw' }}>
+      <div>
+        
+      </div>
       <div style={{ position: 'absolute', zIndex: 1000, top: '5%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '10px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} style={{ marginRight: '8px', padding: '5px', borderRadius: '4px', border: '1px solid #ccc' }} />
         <button onClick={handleSearch} style={{ padding: '5px 10px', borderRadius: '4px', border: 'none', backgroundColor: '#007bff', color: 'white', cursor: 'pointer' }}>{isLoading ? 'Searching...' : 'Search'}</button>

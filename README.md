@@ -1,5 +1,7 @@
 # Mindhive Interview Assessment by Amirul Iman bin Amran
 
+Hosted on AWS EC2: [Mind-hive](http://47.129.1.120:3000/)
+
 LinkedIn: [Amirul Iman](https://www.linkedin.com/in/amirul-iman-a-905061179/)
 GitHub: [Mind Hive Interview Assessment - Amirul](https://github.com/imanamran/mind-hive-interview-assessment-amirul/tree/main)
 
